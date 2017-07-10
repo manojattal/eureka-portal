@@ -170,11 +170,9 @@
     <Content Include="Images\design-execution.png" />
     <Content Include="Images\e-design.png" />
     <Content Include="Images\execution.png" />
-    <Content Include="Images\image1.jpg" />
     <Content Include="Images\img1.jpg" />
     <Content Include="Images\img2.jpg" />
     <Content Include="Images\img3.jpg" />
-    <Content Include="Images\img4.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\project-design.png" />
     <Content Include="Images\SmartHome\AugustDoorLock.jpg" />
@@ -196,6 +194,7 @@
     <Content Include="fonts\slick.eot" />
     <Content Include="fonts\slick.ttf" />
     <Content Include="fonts\slick.woff" />
+    <None Include="Properties\PublishProfiles\interiordesign - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
