@@ -4,11 +4,64 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .scrollimage {
+        max-width: 100%;
+        height:600px;
+        /*max-height: 600px;
+        max-width: 1000px;*/
+    }
+
+    
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+</style>
+
 <h2>Smart Home</h2>
 
 <p>Home automation systems allow automate processes like turning on AC, dimming lights, managing entrance gate and so on. What we consider as a luxury today, is going to be necessity tomorrow.</p>
 
 <p>This is a new world and new devices and services are emerging everyday. We believe there are few good emerging options that can be bet for long term. We have started this new initiative to act as System Integrator by integrating following solutions.</p>
+
+<div class="your-class row">
+    <div>        
+        <img class="scrollimage" src="~/Images/SmartHome/AugustDoorLock.jpg" />
+    </div>
+    <div>
+        <img class="scrollimage" src="~/Images/SmartHome/GoogleHome.jpg" />        
+    </div>
+    <div>
+        <img class="scrollimage" src="~/Images/SmartHome/kwiksetDoorlock.jpg" />        
+    </div>
+    <div>
+        <img class="scrollimage" src="~/Images/SmartHome/philips_hue_lux.jpg" />
+    </div>
+    <div>
+        
+    </div>
+    <div>
+        <img class="scrollimage" src="~/Images/SmartHome/RingDoorbell.jpg" />
+    </div>
+    <div>
+        <img class="scrollimage" src="~/Images/SmartHome/winkHomeAutomationHub.jpg" />
+    </div>
+</div>
 
 <ul>
     <li>Get keyless entry for your home. Your phone is your key!</li>
@@ -18,4 +71,19 @@
 </ul>
 
 <p>If you are interested in getting any of Smart Home service in your existing or new home, feel free to enter details in below form and get in touch with us.</p>
+
+@section Scripts{
+
+    <script type="text/javascript">
+    $(document).ready(function () {        
+        $('.your-class').slick({
+             dots: true,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              cssEase: 'linear'
+        });
+    });
+    </script>
+}
 

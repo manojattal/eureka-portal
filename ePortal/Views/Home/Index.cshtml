@@ -1,21 +1,50 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<style>
+    img {
+        /*max-width: 100%;
+        max-height: 100%;*/
+        max-height:600px;
+        max-width:1000px;
+    }
+
+    .your-class {
+        /*height: 300px;
+        width: 400px;*/
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+</style>
 <div class="row" style="text-align:center">
     <h4>Visit our facebook page to view photos of our about latest projects. Clicke <a href="https://www.facebook.com/EurekaInteriors/" target="_blank">here</a> to go to our facebook page.</h4>
 </div>
 <div class="jumbotron">
-    <div class="banner">
-        <div class="slider">
-            @*<ul>
-                <li> <a href="#"> <img src="slider02.jpg" width="1920" height="447"> </a> </li>
-                <li> <a href="#"> <img src="slider01.jpg" width="1920" height="447"> </a> </li>
-                <li> <a href="#"> <img src="slider02.jpg" width="1920" height="447"> </a> </li>
-                <li> <a href="#"> <img src="slider02.jpg" width="1920" height="447"> </a> </li>
-            </ul>*@
-            <img src="~/Images/image1.jpg" style="width:800px;" />
-            @*<div class="dots"> <a href="javascript:void(0);" rel="0" class="cur"></a> <a href="javascript:void(0);" rel="1"></a> <a href="javascript:void(0);" rel="2"></a> <a href="javascript:void(0);" rel="3"></a> </div>
-            <div class="arrow"> <a href="javascript:void(0);" class="btn-left">&lt;</a> <a href="javascript:void(0);" class="btn-right">&gt;</a> </div>*@
+    <div class="your-class row">
+        <div>
+            <img src="~/Images/img1.jpg" />
+        </div>
+        <div>
+            <img src="~/Images/img2.jpg" />
+        </div>
+        <div>
+            <img src="~/Images/img3.jpg"  />
         </div>
     </div>
 </div>
@@ -24,7 +53,7 @@
     <div class="col-md-4">
         <h2>Get Quotation</h2>
         <p>
-            Give us your requirement details and get quotations for your works FREE!            
+            Give us your requirement details and get quotations for your work FREE!            
         </p>
         <p>@Html.ActionLink("Learn More »", "Estimate", "Home", new object { }, new { @class = "btn btn-default" })</p>
     </div>
@@ -35,13 +64,22 @@
     </div>
     <div class="col-md-4">
         <h2>What We do</h2>
-        <p>We provide complete interior project execution, only 2D and 3D designs, only interior execution servies.</p>        
+        <p>We provide complete interior project execution, 2D and 3D designs, interior execution servies.</p>        
         <p>@Html.ActionLink("Learn More »", "Services", "Home", new object { }, new { @class= "btn btn-default" })</p>
     </div>
 </div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        
+
+@section Scripts{
+
+    <script type="text/javascript">
+    $(document).ready(function () {        
+        $('.your-class').slick({
+             dots: true,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              cssEase: 'linear'
+        });
     });
-</script>
-@*<script src="~/Scripts/slidermanager.js"></script>*@
+    </script>
+}

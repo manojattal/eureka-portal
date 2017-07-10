@@ -65,3 +65,7 @@ c:\users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\bin\M
 c:\users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\obj\Debug\ePortal.csprojResolveAssemblyReference.cache
 c:\users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\obj\Debug\ePortal.dll
 c:\users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\obj\Debug\ePortal.pdb
+C:\Users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\bin\EntityFramework.dll
+C:\Users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\bin\EntityFramework.SqlServer.dll
+C:\Users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\bin\EntityFramework.xml
+C:\Users\manoj.attal\documents\visual studio 2017\Projects\ePortal\ePortal\bin\EntityFramework.SqlServer.xml
